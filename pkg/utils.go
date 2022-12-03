@@ -11,25 +11,36 @@ func InputList(name string) (inputs []string) {
 	return strings.Split(string(dat), "\n")
 }
 
-func Max(v []int) (m int) {
-	m = 0
+func Max(v []int) (max, index int) {
+	max = 0
+	index = -1
 	for i, e := range v {
-		if i == 0 || e > m {
-			m = e
-		}
-	}
-
-	return m
-}
-
-func MaxIndex(v []int) (index int) {
-	m := 0
-	for i, e := range v {
-		if i == 0 || e > m {
-			m = e
+		if i == 0 || e > max {
+			max = e
 			index = i
 		}
 	}
 
-	return index
+	return max, index
 }
+
+func Sum(vs []int) (sum int) {
+	sum = 0
+	for _, v := range vs {
+		sum += v
+	}
+
+	return sum
+}
+
+// func MaxIndex(v []int) (index int) {
+// 	m := 0
+// 	for i, e := range v {
+// 		if i == 0 || e > m {
+// 			m = e
+// 			index = i
+// 		}
+// 	}
+
+// 	return index
+// }
