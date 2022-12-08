@@ -6,6 +6,11 @@ import (
 	"strings"
 )
 
+func ReadFileToStr(name string) string {
+	dat, _ := os.ReadFile(fmt.Sprintf("data/%s.txt", name))
+	return string(dat)
+}
+
 func InputList(name string) (inputs []string) {
 	dat, _ := os.ReadFile(fmt.Sprintf("data/%s.txt", name))
 	return strings.Split(string(dat), "\n")
