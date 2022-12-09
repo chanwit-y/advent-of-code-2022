@@ -19,5 +19,6 @@ func main() {
 	// fmt.Printf("day 6.1 %v \n", day.Day6_1(4))
 	// fmt.Printf("day 6.2 %v \n", day.Day6_1(14))
 	// fmt.Printf("day 7.1 %v \n", day.Day7_1())
-	fmt.Printf("day 7.2 %v \n", day.Day7_2())
+	// fmt.Printf("day 7.2 %v \n", day.Day7_2())
+	fmt.Printf("day 8.1 %v \n", day.Day8_1())
 }
